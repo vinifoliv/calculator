@@ -2,8 +2,8 @@
     margin: 10vh auto;
     padding: 1.5rem;
     border-radius: 1rem;
-    width: 60vw;
-    background-color: brown;
+    width: 50vw;
+    background-color: #121212;
     display: flex;
     flex-direction: column;
 }
@@ -13,5 +13,33 @@
     text-align: right;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: #eee;
+    background-color: gray;
+}
+
+.button-set {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 7.5vh 7.5vh 7.5vh 7.5vh;
+}
+
+.button-set > .button {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnZero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#btnAC, #btnOpposite, #btnPercentage {
+    background-color: gray;
+}
+
+#btnDivide, #btnTimes, #btnMinus, #btnEqual, #btnPlus {
+    background-color: orange;
 }
