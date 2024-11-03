@@ -1,11 +1,12 @@
 .calculator {
+    width: 500px;
     margin: 10vh auto;
     padding: 1.5rem;
-    border-radius: 1rem;
-    width: 50vw;
-    background-color: #121212;
+    border-radius: 2rem;
+    background-color: #191919;
     display: flex;
     flex-direction: column;
+    transition: .5s;
 }
 
 .display {
@@ -23,23 +24,39 @@
     grid-template-rows: 7.5vh 7.5vh 7.5vh 7.5vh;
 }
 
-.button-set > .button {
-    background-color: #3b3b3b;
-    border-radius: 10px;
+.button-set > .numeral, .misc, .operator {
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s;
+}
+
+.numeral {
+    background-color: #3b3b3b;
+}
+
+.numeral:hover {
+    background-color: #2a2a2a;
+}
+
+.misc {
+    background-color: rgb(128, 128, 128);
+}
+
+.misc:hover {
+    background-color: rgb(92, 92, 92);
+}
+
+.operator {
+    background-color: orange;
+}
+
+.operator:hover {
+    background-color: rgb(201, 130, 0);
 }
 
 #btnZero {
     grid-column-start: 1;
     grid-column-end: 3;
-}
-
-#btnAC, #btnOpposite, #btnPercentage {
-    background-color: gray;
-}
-
-#btnDivide, #btnTimes, #btnMinus, #btnEqual, #btnPlus {
-    background-color: orange;
 }
